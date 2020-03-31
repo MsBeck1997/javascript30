@@ -24,3 +24,19 @@ for (number = 0; number <= 100; number = number + 1) {
  */
 
 // Chessboard Exercise - Chapter 2 JavaScript exercise
+let size = 8;
+let board = "";
+
+for (let height = 0; height <= size; height++) {
+	for(let length = 0; length <= size; length++) {
+		if ((length + height) % 2 == 0) {
+			board += " ";
+		}
+		else {
+			board += "#";
+		}
+	}
+	board += "\n"
+}
+
+console.log(board);
